@@ -15,11 +15,13 @@
 ### 14A方案：1
 
 充电电流控制规则为：40度以下14A，40到44度充电电流用二次函数拟合，44度到46度维持7.5A，46到49度用二次函数拟合，49度以上0A。
+
 ![image](https://github.com/paco7er/ccurrent/assets/86546035/91cdd989-bab0-408b-8ef7-4a5312e370c8)
 ![image](https://github.com/paco7er/ccurrent/assets/86546035/70e3f4a0-f4b3-4241-8527-3cc5baf7ea4a)
 
 ### 21A方案：2
 
 充电电流控制规则为，40度以下21A，40到45度充电电流用二次函数拟合，45到49度充电电流用二次函数拟合，49度以上0A。
+
 ![image](https://github.com/paco7er/ccurrent/assets/86546035/76e0a48b-b386-4caf-b4f3-da264a92059d)
 ![image](https://github.com/paco7er/ccurrent/assets/86546035/ad2b1bf9-de45-4fc2-938d-a0277a20dec9)
