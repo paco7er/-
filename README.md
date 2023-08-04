@@ -6,7 +6,7 @@
 ## 主要原理
 控制充电电流，实现充电电流的合理陡降和缓降。
 
-带日志版本：充电电流实时大小写入日志文件为/data/adb/modules/charge/log.txt，便于查看当前写入状态。
+带日志版本：充电电流实时大小写入日志文件为 sdcard/Android/paco/charge/log.txt中，便于查看当前写入状态。
 
 配置文件：sdcard/Android/paco/charge/charge.conf。用于切换电流放置方案。
 #
