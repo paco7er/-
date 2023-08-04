@@ -1,18 +1,18 @@
 # ccurent
-一个电流控制模块，对电流进行修改且去除mi_thermal文件的模块。（测试机型：K50ultra、k60pro，理论可行机型：miui-120W（非120W需要修改电流参数））
+一个充电电流控制模块，对充电电流进行修改且去除mi_thermal文件的模块。（测试机型：K50ultra、k60pro，理论可行机型：miui-120W（非120W需要修改电流参数））
 #
 ## 主要原理
-控制电流，实现电流的合理陡降和缓降。
-带日志版本：电流实时大小写入日志文件为/data/adb/modules/charge/log.txt，便于查看当前写入状态。
+控制充电电流，实现充电电流的合理陡降和缓降。
+带日志版本：充电电流实时大小写入日志文件为/data/adb/modules/charge/log.txt，便于查看当前写入状态。
+配置文件：sdcard/Android/paco/charge/charge.conf。用于切换电流放置方案。
 #
 ## 电流放置方案
-夏日模式：0
-夏日电流控制规则为，40度以下13A，40到44度电流用一个二次函数来拟合，44度到46度7.5A，46到49度用一个二次函数拟合，49度以上0A。
+14A方案：1
+充电电流控制规则为：40度以下14A，40到44度充电电流用二次函数拟合，44度到46度维持7.5A，46到49度用二次函数拟合，49度以上0A。
+![image](https://github.com/paco7er/ccurrent/assets/86546035/91cdd989-bab0-408b-8ef7-4a5312e370c8)
+![image](https://github.com/paco7er/ccurrent/assets/86546035/70e3f4a0-f4b3-4241-8527-3cc5baf7ea4a)
 
-![F554B200AC54C64FB75E1F12BFFDE404](https://user-images.githubusercontent.com/86546035/224915630-2793d2f3-3ee1-4c3b-818a-63096a54b2fe.jpg)
-![9E04FD32509AA3A43008004AC0896A03](https://user-images.githubusercontent.com/86546035/224915650-bd27ad0e-8f0d-42a2-9777-0ad0e789bb19.jpg)
-
-冬日模式：1。
-夏日电流控制规则为，40度以下20A，40到44度电流用一个二次函数来拟合，44度到46度7.5A，46到49度用一个二次函数拟合，49度以上0A。
-
-
+21A方案：2
+充电电流控制规则为，40度以下21A，40到45度充电电流用二次函数拟合，45到49度充电电流用二次函数拟合，49度以上0A。
+![image](https://github.com/paco7er/ccurrent/assets/86546035/76e0a48b-b386-4caf-b4f3-da264a92059d)
+![image](https://github.com/paco7er/ccurrent/assets/86546035/ad2b1bf9-de45-4fc2-938d-a0277a20dec9)
