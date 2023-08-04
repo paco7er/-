@@ -21,7 +21,7 @@
 
 ### 21A方案：2
 
-充电电流控制规则为，40度以下21A，40到45度充电电流用二次函数拟合，45到49度充电电流用二次函数拟合，49度以上0A。
+充电电流控制规则为：40度以下21A，40到45度充电电流用二次函数拟合，45到49度充电电流用二次函数拟合，49度以上0A。
 
 ![image](https://github.com/paco7er/ccurrent/assets/86546035/76e0a48b-b386-4caf-b4f3-da264a92059d)
 ![image](https://github.com/paco7er/ccurrent/assets/86546035/ad2b1bf9-de45-4fc2-938d-a0277a20dec9)
