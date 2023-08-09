@@ -25,3 +25,6 @@
 
 ![image](https://github.com/paco7er/ccurrent/assets/86546035/76e0a48b-b386-4caf-b4f3-da264a92059d)
 ![image](https://github.com/paco7er/ccurrent/assets/86546035/ad2b1bf9-de45-4fc2-938d-a0277a20dec9)
+
+### 自定义方案：3
+自己输入一个电流，单位A，充电电流保持这个值恒定。
