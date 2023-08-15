@@ -27,4 +27,5 @@
 ![image](https://github.com/paco7er/ccurrent/assets/86546035/ad2b1bf9-de45-4fc2-938d-a0277a20dec9)
 
 ### 自定义方案：3
-自己输入一个电流，单位A，充电电流保持这个值恒定。
+custom_charge：输入电流，单位A，充电电流保持这个值恒定。
+down_current：电流开始线性下降的温度阈值，单位℃，大于49℃，电流为0.
